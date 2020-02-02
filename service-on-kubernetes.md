@@ -26,9 +26,8 @@
 
 1. chart结构
 
-···
-
-···
+```
+```
 
 2. 将开发完成的Chart包上传到Chart仓库：XXXXXXXXXXX
 
