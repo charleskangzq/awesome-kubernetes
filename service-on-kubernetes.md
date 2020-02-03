@@ -27,7 +27,16 @@
 1. chart结构
 
 ```
-
+.
+└── redis
+    ├── backup
+    │   ├── chart.yaml
+    │   ├── template
+    │   └── values.yaml
+    └── deploy
+        ├── chart.yaml
+        ├── template
+        └── values.yaml
 ```
 
 2. 将开发完成的Chart包上传到Chart仓库：XXXXXXXXXXX
