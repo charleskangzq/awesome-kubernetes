@@ -25,6 +25,44 @@ $ operator-sdk add controller --api-version=app.example.com/v1alpha1 --kind=AppS
 4. 最终项目目录结构
 
 ```
+.
+└── app-operator
+    ├── build
+    │   ├── bin
+    │   │   ├── entrypoint
+    │   │   └── user_setup
+    │   └── Dockerfile
+    ├── cmd
+    │   └── manager
+    │       └── main.go
+    ├── deploy
+    │   ├── crds
+    │   │   ├── app.example.com_appservices_crd.yaml
+    │   │   └── app.example.com_v1alpha1_appservice_cr.yaml
+    │   ├── operator.yaml
+    │   ├── role_binding.yaml
+    │   ├── role.yaml
+    │   └── service_account.yaml
+    ├── go.mod
+    ├── go.sum
+    ├── pkg
+    │   ├── apis
+    │   │   ├── addtoscheme_app_v1alpha1.go
+    │   │   ├── apis.go
+    │   │   └── app
+    │   │       ├── group.go
+    │   │       └── v1alpha1
+    │   │           ├── appservice_types.go
+    │   │           ├── doc.go
+    │   │           └── register.go
+    │   └── controller
+    │       ├── add_appservice.go
+    │       ├── appservice
+    │       │   └── appservice_controller.go
+    │       └── controller.go
+    ├── tools.go
+    └── version
+        └── version.go
 ```
 
 
