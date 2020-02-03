@@ -13,6 +13,8 @@
 
 如果该服务是复杂的有状态的服务且目前kubernetes现有的资源不支持，则需要开发人员开发Operator来管理管理该服务
 
+详细的Operator开发流程[Operator开发流程](./operator-on-kubernetes.md)
+
 
 ## 服务部署
 
