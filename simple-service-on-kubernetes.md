@@ -1,4 +1,4 @@
-# 服务上Kubernetes平台流程
+# 简单服务上Kubernetes平台流程
 
 ## 服务开发
 
@@ -9,20 +9,11 @@
 |开源项目	   |		无					|
 |自研项目	   |开发团队需要进行开发工作	|
 
-### Operator开发
-
-如果该服务是复杂的有状态的服务且目前kubernetes现有的资源不支持，则需要开发人员开发Operator来管理管理该服务
-
-详细的Operator开发流程[Operator开发流程](./operator-on-kubernetes.md)
-
-
 ## 服务部署
 
 ### 镜像打包
 
-1. 开发人员将服务开发完成后打包成镜像，将镜像上传到镜像仓库：XXXXXXXXXX
-
-2. 开发人员将Operator服务开发完成后打包成镜像，将镜像上传到镜像仓库：XXXXXXXXXX
+开发人员将服务开发完成后打包成镜像，将镜像上传到镜像仓库：XXXXXXXXXX
 
 ### Chart开发
 
@@ -43,15 +34,10 @@
 
 2. 将开发完成的Chart包上传到Chart仓库：XXXXXXXXXXX
 
-
 ## 服务运维
 
-1. kubernetes平台运维工具
-
-2. 开发自己服务独有运维工具
+详细参考[服务运维](./service-operations-on-kubernetes.md)
 
 ## 服务监控
 
-1. 日志
-
-2. UI
+详细参考[服务监控](./service-metric-kubernetes.md)
