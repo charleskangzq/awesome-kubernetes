@@ -15,25 +15,25 @@
 
 使用[Operator-SDK](https://github.com/operator-framework/operator-sdk)工具辅助整个Operator的开发，以Redis服务为示例
 
-1. 生成项目
+#### 生成项目
 
 ```
 $ operator-sdk new redis-operator
 ```
 
-2. 添加CRD
+#### 添加CRD
 
 ```
 $ operator-sdk add api --api-version=jdcloud.com/v1alpha1 --kind=RedisCluster
 ```
 
-3. 添加Controller
+#### 添加Controller
 
 ```
 $ operator-sdk add controller --api-version=jdcloud.com/v1alpha1 --kind=RedisCluster
 ```
 
-4. 项目初始化后目录结构
+#### 项目初始化后目录结构
 
 ```
 redis-operator/
@@ -76,7 +76,7 @@ redis-operator/
     └── version.go
 ```
 
-5. 开发服务自身逻辑
+#### 开发服务自身逻辑
 
 服务定义：开发人员在pkg/apis/jdcloud/v1alpha1/rediscluster_types.go文件里面添加管理服务需要的字段
 
